@@ -5,7 +5,7 @@ import { RiSunFill, RiMenuFill } from "react-icons/ri";
 import { MdMonitor } from "react-icons/md";
 const Navbar = ({ handleThemeSwitch, theme }) => {
   return (
-    <header className="dark:bg-primaryDark bg-lightBgOne py-5">
+    <header className="dark:bg-primaryDark bg-lightBgOne py-5 shadow-lg">
       <div className="container">
         <nav className="flexbox">
           <div className="logo-area">
@@ -20,7 +20,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
           <div className="menu-list-area lg:block hidden">
             <ul className="flexbox gap-5">
               <li>
-                <a href="/" className="active  ">
+                <a href="/" className="active">
                   Dashboard
                 </a>
               </li>
@@ -77,7 +77,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
                     <li className="my-2">
                       <button
                         className="flex items-center hover:bg-lightBgTwo dark:hover:bg-secondaryDark py-1 px-3 rounded w-full  gap-2 text-sm"
-                        onClick={() => handleThemeSwitch("dark")}
+                        onClick={() => handleThemeSwitch(theme)}
                       >
                         <MdMonitor /> <span>System</span>
                       </button>
