@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./node_modules/flowbite/**/*.js"],
   darkMode: "class",
 
   theme: {
@@ -8,12 +8,12 @@ module.exports = {
       colors: {
         primaryDark: "#17181B",
         secondaryDark: "#000000",
+        tertiaryDark: "#202124",
         primaryLight: "#637381",
         secondaryLight: "#95B3CD",
         primaryBlue: "#564FB1",
         lightBgOne: "#F7F7F7",
         lightBgTwo: "#F7F7F8",
-        lightBgThree: "#202124",
       },
     },
     container: {
@@ -27,5 +27,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

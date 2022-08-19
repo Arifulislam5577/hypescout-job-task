@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+#root {
+  height: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: "Sen", sans-serif;
   font-weight: 400;
@@ -13,8 +22,13 @@ body {
   @apply flex items-center justify-between;
 }
 .navLink {
-  @apply text-primaryLight font-normal text-sm;
+  @apply dark:text-primaryLight text-tertiaryDark font-normal text-sm;
 }
+
 .active {
-  @apply bg-lightBgThree text-white text-sm py-2 px-3 rounded shadow font-bold;
+  @apply bg-tertiaryDark text-white text-sm py-2 px-3 rounded shadow font-bold;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
