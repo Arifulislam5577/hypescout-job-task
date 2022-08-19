@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Home from "./components/Pages/Home/Index";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -27,7 +28,7 @@ function App() {
   return (
     <>
       <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-
+      <Home />
       <Footer theme={theme} />
     </>
   );

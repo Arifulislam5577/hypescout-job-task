@@ -16,6 +16,7 @@ html,
 body {
   font-family: "Sen", sans-serif;
   font-weight: 400;
+  height: 100%;
 }
 
 .flexbox {
@@ -31,4 +32,18 @@ body {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.displayNone {
+  @apply hidden;
+}
+
+/* Pagination */
+
+.pageNum {
+  @apply text-sm text-primaryLight;
+}
+
+.activePage {
+  @apply text-sm text-primaryLight p-2 bg-primaryDark rounded-full h-8 w-8  flex items-center justify-center shadow-lg text-center;
 }

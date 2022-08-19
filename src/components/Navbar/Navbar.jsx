@@ -5,7 +5,7 @@ import { RiSunFill, RiMenuFill } from "react-icons/ri";
 import { MdMonitor } from "react-icons/md";
 const Navbar = ({ handleThemeSwitch, theme }) => {
   return (
-    <header className="dark:bg-primaryDark bg-lightBgOne py-4">
+    <header className="dark:bg-primaryDark bg-lightBgOne py-5">
       <div className="container">
         <nav className="flexbox">
           <div className="logo-area">
@@ -49,7 +49,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
                 </button>
               </li>
               <li>
-                <div className="dropdown inline-block relative">
+                <div className="dropdown inline-block relative z-10">
                   <button className="text-primaryLight text-base">
                     {theme === "dark" ? (
                       <RiMoonClearFill />
@@ -57,7 +57,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
                       <RiMoonClearLine />
                     )}
                   </button>
-                  <ul className="dropdown-menu absolute hidden dark:text-primaryLight text-tertiaryDark dark:bg-primaryDark bg-lightBgOne p-3 w-36 ">
+                  <ul className="dropdown-menu absolute hidden dark:text-primaryLight text-tertiaryDark dark:bg-primaryDark bg-lightBgOne p-3 w-36  -left-14">
                     <li className="my-2 mt-3">
                       <button
                         className="flex items-center hover:bg-lightBgTwo dark:hover:bg-secondaryDark py-1 px-3 rounded w-full  gap-2 text-sm"
