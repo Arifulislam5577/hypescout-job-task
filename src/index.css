@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Sen", sans-serif;
+  font-weight: 400;
+}
+
+.flexbox {
+  @apply flex items-center justify-between;
+}
+.navLink {
+  @apply text-primaryLight font-normal text-sm;
+}
+.active {
+  @apply bg-lightBgThree text-white text-sm py-2 px-3 rounded shadow font-bold;
+}
